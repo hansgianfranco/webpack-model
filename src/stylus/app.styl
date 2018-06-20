@@ -1,0 +1,66 @@
+@import 'utils/normalize'
+
+// Import fonts & icons
+@import 'utils/fonts'
+@import 'utils/icons'
+
+// Import global
+@import 'utils/variables'
+@import 'utils/mixins'
+
+// Import animations
+@import 'utils/animations'
+
+//General code
+*,
+*:after,
+*:before
+  box-sizing border-box
+
+.container
+  width 100%
+  max-width 1200px
+  padding-left 15px
+  padding-right 15px
+  margin-left auto
+  margin-right auto
+
+body
+  font-size 16px
+  font-family t-0
+  color c-0
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+a
+  color inherit
+  &:focus
+    outline none
+
+h1, h2, h3, h4, h5, h6
+  font-weight normal
+
+.link
+  &:hover
+    text-decoration underline
+    color c-1
+
+.relative
+  position relative
+
+.left
+  float left
+
+.right
+  float right
+
+.text-center
+  text-align center
+
+.clearfix
+  clearfix()
+
+// Import blocks
+@import 'blocks/header'
+@import 'blocks/footer'
+@import 'blocks/base'

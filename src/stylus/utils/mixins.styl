@@ -1,0 +1,49 @@
+// Mixins
+placeholder(color,fam)
+	::-webkit-input-placeholder { color: color; font-family: fam; }
+	:-moz-placeholder { color: color; font-family: fam; }
+	::-moz-placeholder { color: color; font-family: fam; }
+	:-ms-input-placeholder { color: color; font-family: fam; }
+
+transition-all()
+	transition ease all 0.4s
+	
+clearfix()
+	zoom 1
+	&:after
+	&:before
+		content ""
+		display table
+	&:after
+		clear both
+respon()
+	display block
+	width auto
+
+img()	
+	img 
+		max-width 100%
+		height auto	
+
+respon-img()
+	display block
+	width auto
+	text-align center
+
+inlineblock(p)
+	display inline-block
+	*display inline 
+	zoom 1 
+	vertical-align p
+	font-size 16px
+	box-sizing border-box
+	
+backgroundsize()
+	background-repeat no-repeat
+	background-size cover
+	background-position center center 		
+
+img-res()
+	width 100%
+	height auto
+	display block

@@ -1,0 +1,43 @@
+.header
+	.header-cnt
+		clearfix()
+.menu
+	&.open
+		.menu-btn
+			.bar1
+				transform translateY(7px) rotate(45deg)
+			.bar3
+				transform translateY(-7px) rotate(-45deg)
+			.bar2
+				opacity 0
+.logo
+	float left
+.menu
+	float right
+
+.menu-item
+	display inline-block
+	vertical-align middle
+	.menu-link
+		display block
+
+.menu-btn
+	display none
+	.bar1,
+	.bar2,
+	.bar3
+		display block
+		background c-1
+		width 23px
+		height 3px
+		opacity 1
+		transition-all()
+	.bar1,
+	.bar2
+		margin-bottom 4px
+
+@media screen and (max-width 768px)
+	.menu-btn
+		display inline-block
+	.menu-list
+		display none
